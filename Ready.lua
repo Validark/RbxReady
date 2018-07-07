@@ -1,9 +1,9 @@
-local DEFAULT_TIMEOUT = 1 -- Length of time where no descendants have been added to consider the object loaded
-
+-- A Library for yielding until an object's descendants have finished replicating
+-- Can be loaded using the Rostrap library manager
 -- @author EmeraldSlash
 -- @repository https://github.com/EmeraldSlash/RbxReady
--- @rostrap Can be loaded using the Rostrap library manager
 
+local DEFAULT_TIMEOUT = 1 -- Length of time where no descendants have been added to consider the object loaded
 local Ready = {}
 
 function Ready:Wait(Object, Timeout)
